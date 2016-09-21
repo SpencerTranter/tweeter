@@ -1,0 +1,25 @@
+.new-tweet{
+  border-radius: 4px;
+  background-color: #eaeaea;
+  padding: 0 1em 0 1em;
+  margin: 2em;
+  display: block;
+  border: 1px solid #bcbcbc;
+}
+.new-tweet h2{
+  margin: 10px 0;
+  border-bottom: 1px solid black;
+}
+.new-tweet form{
+  margin-bottom: 1em;
+}
+.new-tweet textarea{
+  width: 100%;
+  padding:5px;
+}
+.new-tweet span{
+  float: right;
+}
+.new-tweet .red{
+  color: red;
+}

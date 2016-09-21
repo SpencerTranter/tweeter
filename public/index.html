@@ -7,26 +7,52 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
 
+    <!-- CSS Custom Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700i" rel="stylesheet">
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/past-tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
+    <script type="text/javascript" src="/scripts/button.js"></script>
     <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/a0cd422649.js"></script>
   </head>
 
   <body>
 
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
-      <img class="logo" src="/images/bird.png" width="80px" height="80px">
+      <img class="logo" src="/images/bird.png"">
       <span class="header">Tweeter</span>
+      <div class ="button">
+      <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Compose
+      <div>
     </nav>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form id="tweet-create" action="/tweets" method="POST">
+          <textarea name="text" placeholder="What are you humming about?"></textarea>
+          <input id="submit" type="submit" value="Tweet" disabled="true">
+          <span class="counter">140</span>
+        </form>
+      </section>
+
+      <section id="tweets-container">
+
+      </section>
     </main>
 
   </body>

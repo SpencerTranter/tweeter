@@ -32,7 +32,7 @@ module.exports = function(db) {
       created_at: Date.now()
     };
     db.collection("tweets").insertOne(tweet, (err, result) => {
-      res.json(result);
+      res.json(tweet);
     });
   });
 

@@ -1,0 +1,81 @@
+article {
+  height: 100%;
+  background-color: white;
+  margin: 2em;
+  border-radius: 4px;
+  border: 1px solid #bfc0bf;
+  height: 30%;
+  min-height: 200px;
+}
+article:hover{
+border: 1px solid #525252;
+}
+article p {
+  padding: 0 0.5em;
+  margin: 0;
+}
+
+/*Header CSS*/
+article header {
+  height: 70px;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #bcbcbc;
+  font-size: 150%;
+  opacity: 0.6;
+}
+article:hover header{
+  opacity: 1;
+  border-bottom: 1px solid #525252;
+}
+article header .user{
+  padding-top: 15px;
+  float: left;
+}
+article header .user-ID{
+  padding-top: 1em;
+  font-size: 65%;
+  float: right;
+  color: #707070;
+}
+article header .avatar{
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+article header:after{
+  clear: both;
+}
+
+/*Body CSS*/
+article section {
+  height: 100px;
+  padding: 25px 0;
+  background: rgba(255,255,255,1);
+}
+
+/*Footer CSS*/
+article footer {
+  opacity: 0.6;
+  height: 30px;
+  font-size: 75%;
+  padding: 5px 0;
+  border-top: 1px solid #bcbcbc;
+}
+article:hover footer{
+  opacity: 1;
+  border-top: 1px solid #525252;
+}
+article:hover footer .icon {
+  visibility: visible;
+}
+article footer .icon{
+  visibility: hidden;
+  float: right;
+  margin-right: 0.5em;
+  color: #4fbaaa;
+}
+article footer .icon i{
+padding-left: 2px;
+}
+
