@@ -12,7 +12,6 @@ $(function(){
     });
   }());
 
-
   //Post request
   $("#tweet-create").submit(function(e) {
       let url = "/tweets";
@@ -112,5 +111,9 @@ $(function(){
     }
     return daysApart + ' days ago';
   }
+
+  $('#tweets-container').on('click', function (){
+    alert('Tweet, Tweet!');
+  });
 
 });

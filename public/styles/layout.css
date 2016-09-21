@@ -23,14 +23,12 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 main {
-  height: 100%;
   width: 450px;
   background-color: white;
   margin: auto;
+  padding-top: 0.2em;
   margin-top: 3em;
   border-radius: 4px;
-  overflow: auto;
-  position: relative;
 }
 
 /*
