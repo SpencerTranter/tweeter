@@ -1,8 +1,9 @@
 "use strict";
+
 $(function(){
+
   $("#tweet-create").submit(function(e) {
       let url = "../../tweets";
-
       let $formText = $(this).find('textarea').val();
       let $textLength = $formText.length;
 
@@ -22,4 +23,5 @@ $(function(){
       }
     e.preventDefault();
   });
+
 });

@@ -1,4 +1,5 @@
 "use strict";
+
 $(function(){
 
   //Self invoking to load tweets on page load
@@ -49,7 +50,7 @@ $(function(){
     $('#tweets-container').empty();
   }
 
-  //Jquary creation of tweet forms
+  //Jquery creation of tweet forms
   function createTweetElement(data) {
     let $tweet = $('<article>');
     let $header = createTweetHeader(data.user);
@@ -111,9 +112,5 @@ $(function(){
     }
     return daysApart + ' days ago';
   }
-
-  $('#tweets-container').on('click', function (){
-    alert('Tweet, Tweet!');
-  });
 
 });
